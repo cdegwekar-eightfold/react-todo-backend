@@ -1,0 +1,21 @@
+TODO APP
+______________ [Add Item]
+List of todo
+1. item1 [x]
+2.
+3.
+SPA
+React UI
+Templates (backend rendering)
+API Python Flask
+SQLAlchemy
+SQLite/
+MySQL
+SQL Databases
+No SQL Databases
+SOLR Index
+AWS
+dev server
+UI<dynamic HTML, JS, CSS>
+View (URL(interaction)) <-> Server Endpoint returns rendered Data (URL) <-> Rendered Template(Template Engine (model)) <-> Service (DB)
+React View (Model/State) <->
