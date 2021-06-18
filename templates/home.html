@@ -3,11 +3,13 @@
 
     </title>
     <body>
-        <p>Tasks to be completed</p>
+        <h1>ToDo List</h1>
+        <form action="{{ url_for('add') }}" method="POST">
+            <input type="text" required="required" name="new_item">
+            <input type="submit" value="Add Item">
+        </form>
         {%for task in task_list%}
-            {%if not task.completed%}
-            <h1>{{task.description}}</h1>
-            {%endif%}
+            <h3>{{loop.index}}. {{task.description}}</h3>
         {% endfor %}
     </body>
 </html>
