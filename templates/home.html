@@ -9,7 +9,9 @@
             <input type="submit" value="Add Item">
         </form>
         {%for task in task_list%}
-            <h3>{{loop.index}}. {{task.description}}</h3>
+            <h3>{{loop.index}}. {{task.description}}</h3> <form action="{{ url_for('delete',id=task.id) }}" method="POST" > 
+                <input type="submit" value="Delete Item">
+            </form>
         {% endfor %}
     </body>
 </html>

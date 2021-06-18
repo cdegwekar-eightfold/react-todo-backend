@@ -51,6 +51,15 @@ def add():
     db.session.commit()
     return redirect(url_for('home'))
 
+@app.route('/delete/<id>', methods=['POST'])
+def delete(id):
+    print(id)
+    delete_item = ToDoTable.query.get(id)
+    db.session.delete(delete_item)
+    db.session.commit()
+    return redirect(url_for('home'))
+
+
 
 
 if __name__ == '__main__':
